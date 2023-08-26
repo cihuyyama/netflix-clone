@@ -1,4 +1,5 @@
 import Billboard from '@/components/Billboard'
+import Footer from '@/components/Footer'
 import InfoModal from '@/components/InfoModal'
 import MovieList from '@/components/MovieList'
 import Navbar from '@/components/Navbar'
@@ -41,6 +42,7 @@ export default function Home() {
         <MovieList title='Trending Now' data={movies}/>
         <MovieList title='My List' data={favorites}/>
       </div>
+      <Footer/>
     </>
   )
 }
