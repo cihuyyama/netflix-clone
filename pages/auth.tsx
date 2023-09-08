@@ -51,10 +51,19 @@ const Auth = () => {
                     <img src="/images/logo.png" alt="logo" className="h-12" />
                 </nav>
                 <div className="flex justify-center">
-                    <div className="bg-black bg-opacity-70 px-16 py-16 self-center mt-2 lg:w-w/5 lg:max-w-md rounded-md w-full">
+                    <div className="bg-black bg-opacity-70 px-16 py-8 self-center mt-2 lg:w-w/5 lg:max-w-md rounded-md w-full">
                         <h2 className="text-white text-4xl mb-8 font-semibold">
                             {variant == 'login' ? 'Sign in' : 'Register'}
                         </h2>
+                        <div className="mb-5">
+                        <h3 className="text-red-500">
+                            Test Account
+                            <br />
+                            email: test@mail.com
+                            <br />
+                            pass: test123
+                        </h3>
+                        </div>
                         <div className="flex flex-col gap-4">
                             {variant == 'register' && (
                                 <Input
